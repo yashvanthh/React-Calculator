@@ -7,18 +7,40 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+dist-ssr/
+.vite/
 *.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Production
+.env
+.env.*.local
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS-specific
+ehthumbs.db
+Icon?
+desktop.ini
+
+# npm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
